@@ -1,0 +1,186 @@
+@page {
+  size: Letter;
+  margin: 0.55in;
+}
+
+:root {
+  --ink: #233549;
+  --soft: #5b6b7c;
+  --line: #b8c4d0;
+  --accent: #2f6f8f;
+  --accent-soft: #e3eef4;
+  --card: #f7fafc;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DejaVu Sans", "Verdana", Arial, sans-serif;
+  color: var(--ink);
+  font-size: 9.5pt;
+  line-height: 1.35;
+}
+
+h1 {
+  font-size: 19pt;
+  font-weight: 700;
+  margin: 0 0 2pt 0;
+  color: var(--accent);
+  letter-spacing: 0.2pt;
+}
+
+h2 {
+  font-size: 11.5pt;
+  font-weight: 700;
+  margin: 10pt 0 4pt 0;
+  padding-bottom: 2pt;
+  border-bottom: 1.4pt solid var(--accent);
+}
+
+h3 {
+  font-size: 10pt;
+  font-weight: 700;
+  margin: 7pt 0 2pt 0;
+}
+
+p, li {
+  margin: 2pt 0;
+}
+
+.warn {
+  color: #b03a2e;
+  font-weight: 700;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 0.7pt solid var(--line);
+  padding: 3pt 5pt;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: var(--accent-soft);
+  font-size: 8.8pt;
+  text-transform: uppercase;
+  letter-spacing: 0.4pt;
+}
+
+.checkable td:first-child,
+td.leaf {
+  width: 18pt;
+  text-align: center;
+}
+
+.box {
+  display: inline-block;
+  width: 10pt;
+  height: 10pt;
+  border: 1pt solid var(--line);
+  vertical-align: middle;
+}
+
+td.boxcell {
+  width: 16pt;
+  text-align: center;
+}
+
+.faint {
+  color: var(--soft);
+  font-size: 8.5pt;
+}
+
+.header {
+  border-bottom: 2.2pt solid var(--accent);
+  padding-bottom: 4pt;
+  margin-bottom: 6pt;
+}
+
+.subtitle {
+  color: var(--soft);
+  font-size: 9pt;
+  margin: 0;
+}
+
+footer {
+  margin-top: 14pt;
+  border-top: 0.7pt solid var(--line);
+  padding-top: 4pt;
+  color: var(--soft);
+  font-size: 8pt;
+}
+
+.tips {
+  page-break-after: always;
+}
+
+.tips h1 {
+  font-size: 17pt;
+}
+
+.tips .tipbody {
+  margin-top: 10pt;
+}
+
+.tipcard {
+  background: var(--card);
+  border-left: 4pt solid var(--accent);
+  padding: 6pt 9pt;
+  margin: 6pt 0;
+}
+
+.tipcard h2 {
+  border-bottom: none;
+  margin: 0 0 2pt 0;
+  color: var(--accent);
+  font-size: 11pt;
+}
+
+ul.tips-list {
+  padding-left: 14pt;
+}
+
+ul.tips-list li {
+  margin: 4pt 0;
+}
+
+.fillline {
+  border-bottom: 0.9pt solid var(--line);
+  display: block;
+  height: 13pt;
+}
+
+.grid2 {
+  display: flex;
+  gap: 10pt;
+}
+
+.grid2 > div {
+  flex: 1;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.section {
+  margin-bottom: 8pt;
+}
+
+.keep-together {
+  page-break-inside: avoid;
+}
+
+.bignote {
+  color: var(--soft);
+  font-size: 9pt;
+  font-style: italic;
+}
